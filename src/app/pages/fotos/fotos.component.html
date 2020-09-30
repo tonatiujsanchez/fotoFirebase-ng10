@@ -1,0 +1,19 @@
+<!-- <div class="row row-cols-1 row-cols-md-3">
+    <div *ngFor="let item of items | async" class="col mb-4">
+      <div class="card h-100">
+        <img [src]="item.url" class="card-img-top" [alt]="item.nombre">
+        <div class="card-body">
+          <h5 class="card-title">{{ item.nombre }}</h5>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="card-columns">
+    <div *ngFor="let item of items | async" class="card">
+        <img [src]="item.url" class="card-img-top" [alt]="item.nombre">
+        <div class="card-body">
+            <h5 class="card-title">{{ item.nombre }}</h5>
+        </div>
+    </div>
+  </div>
